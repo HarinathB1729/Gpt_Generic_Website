@@ -1,0 +1,546 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #212529;
+  background-color: #e3fafc;
+}
+
+.AdminHome {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+.deptImg {
+  width: 65%;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blue; */
+}
+.DivCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  border:1px solid red;
+}
+
+.authentication {
+  background-color: aquamarine;
+  width: 35%;
+  font-size: 1.6rem;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.authentication h2 {
+  /* background-color: cadetblue; */
+  font-weight: 700;
+  margin: 1rem auto;
+}
+
+.authentication form {
+  display: flex;
+  flex-direction: column;
+  /* background-color: brown;  */
+  gap: 2 rem;
+  margin: 1rem auto;
+}
+
+.authentication p {
+  margin: 1rem auto;
+}
+.authentication span {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0 auto;
+  margin: 1rem auto;
+}
+
+.authentication form input {
+  border: none;
+  width: 80%;
+  border-bottom: 1px solid gray;
+  border-radius: 0;
+  margin: 1rem auto;
+}
+
+.authentication button {
+  border-radius: 0;
+  margin: 1rem auto;
+}
+
+h1 {
+  /* margin-top: 1rem; */
+  font-weight: 600;
+  font-size: 2.4rem;
+  text-align: center;
+  color: blue;
+}
+
+.adminHeader {
+  width: 100%;
+  height: auto;
+  font-size: 2rem;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  /* position:absolute; */
+  /* border: 1px solid red; */
+}
+
+.adminContent {
+  /* height: 80vh; */
+  /* position: relative; */
+  padding: 2rem 5rem;
+  font-size: 1.6rem;
+
+  /* background-color: black; */
+}
+.admin-top {
+  display: flex;
+  align-items: center;
+}
+.Heading {
+  /* background-color: chartreuse; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  /* display: flex;
+
+  justify-content: space-between;
+  align-items: center; */
+  /* border: 1px solid black; */
+}
+
+.Account {
+  display: flex;
+  align-self: center;
+  /* background-color: blue; */
+  width: 20rem;
+  height: 40px;
+  margin-right: 100px;
+  position: relative;
+}
+
+.Flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-details {
+  margin-left: auto;
+}
+.profile-details span {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  /* text-align: center; */
+  width: auto;
+  vertical-align: middle;
+  margin-left: auto !important;
+  color: #fff !important;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  /* justify-content: flex-start; */
+}
+.profile-details span:hover li {
+  display: block !important;
+}
+.profile-details span ul {
+  position: absolute;
+  top: 100%;
+  width: 150%;
+  text-align: right;
+  /* left: 0; */
+  right: 0;
+  z-index: 12;
+  background: green;
+}
+.profile-details span ul li {
+  display: none;
+  padding: 10px;
+/*  display: flex;
+   justify-content: flex-end; */
+}
+
+.NavBar {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: auto;
+  background-color: bisque;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0;
+}
+
+.NavBar ul {
+  display: flex;
+  flex: 1 0;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.NavBar ul li {
+  list-style: none;
+  width: auto;
+  padding: 1rem;
+  position: relative;
+}
+
+.NavBar ul li:hover {
+  background-color: blue;
+}
+
+/* .AccBar{
+  position: relative;
+} */
+.Dropdown {
+  background-color: bisque;
+  display: none !important;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 200px;
+  font-size: 1.6rem;
+  z-index: 99;
+  padding: 0;
+  text-align: left;
+}
+.Left {
+  left: 0;
+}
+
+.NavBar ul li:hover .Dropdown {
+  display: block !important;
+  list-style: none;
+}
+
+.NavBar div {
+  /* border: 1px solid black; */
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.NavLink,
+.NavLink:active {
+  color: green;
+  text-decoration: none;
+}
+.NavLink:hover {
+  /* background-color: blue;
+  border-radius: 1rem;
+  color:white; */
+  color: blue;
+  /* font-weight: bold; */
+  /* transition: border-bottom ; */
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: blue;
+  height: 4rem; 
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: blue;
+}
+
+.Remarks {
+  margin-left: 10rem;
+  color: red;
+}
+
+.Error {
+  font-weight: bold;
+  color: red;
+}
+
+.dbInfoDiv {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dbInfoDiv div {
+  width: 80%;
+  border: 1px solid black;
+  height: 5rem;
+  position: relative;
+  padding: 1rem;
+}
+
+.dbInfoDiv div button {
+  position: absolute;
+  width: 10rem;
+  height: 3rem;
+  right: 5rem;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+form div {
+  border: 1px solid black;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.6rem;
+  position: relative;
+}
+
+form div h4 {
+  /* background-color: yellowgreen; */
+  /* height: 4rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.6rem;
+  justify-content: center; */
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+form input {
+  width: 20%;
+  font-size: 1.6rem;
+  height: 3rem;
+  /* border-radius: 0.6rem; */
+  margin: 1rem;
+}
+
+form table {
+  /* border: 1px solid black; */
+  width: 100%;
+  border-collapse: collapse;
+
+  /* background-color: bisque; */
+}
+.TextCenter {
+  text-align: center;
+}
+.TableCol--2 td:first-child,
+.TableCol--2 th:first-child {
+  /* padding: 0.7rem; */
+  width: 20%;
+  text-align: right;
+  /* border: 1px solid black; */
+}
+
+
+
+
+.TableCol--3 td:first-child,
+.TableCol--3 th:first-child {
+  /* padding: 0.7rem; */
+  width: 20%;
+  text-align: right;
+  /* border: 1px solid black; */
+}
+
+.TableCol--3 td,
+.TableCol--3 th {
+  /* padding: 0.7rem; */
+  width: 40%;
+  text-align: center;
+  font-weight: normal;
+  /* border: 1px solid black; */
+}
+
+form td input {
+  width: 90%;
+  font-size: 1.5rem;
+  height: 3rem;
+  padding: 1rem;
+  /* border: none; */
+  /* border-bottom: 1px solid gray; */
+  /* border-radius: 0.6rem;   */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form td input[type="checkbox"] {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+form td select {
+  width: 90%;
+  height: 3rem;
+  /* border-radius: 0.6rem; */
+  margin-bottom: 1rem;
+}
+
+form td textarea {
+  width: 90%;
+  font-size: 1.6rem;
+  /* border-radius: 0.6rem; */
+  margin-top: 1rem;
+}
+
+form td button {
+  /* width: 15rem; */
+  /* height: 2rem; */
+  /* border-radius: 2rem; */
+}
+
+.TableCol--2 th:first-child,
+.TableCol--2 td:first-child {
+  width: 50%;
+}
+
+.TableCol--2 input {
+  width: 40%;
+  height: 3rem;
+  border-radius: 0.6rem;
+}
+
+form td input[type="file"] {
+  width: 100%;
+}
+
+/* .TableCol--4 th:nth-child(odd),
+.TableCol--4 td:nth-child(odd) {
+  width: 20%;
+  text-align: right;
+}
+
+.TableCol--4 th:nth-child(even),
+.TableCol--4 td:nth-child(even) {
+  width: 30%;
+} */
+
+.TableCol--4 th,
+.TableCol--4 td {
+  width: 25%;
+  /* border: 1px solid blue; */
+}
+
+.TableTd--5 th,
+.TableTd--5 td {
+  width: 20%;
+  /* border: 1px solid blue; */
+}
+
+.TableTd--6 th,
+.TableTd--6 td {
+  width: 16.5%;
+  /* border: 1px solid blue; */
+}
+
+.TableTd--4 th:first-child,
+.TableTd--5 th:first-child,
+.TableTd--6 th:first-child {
+  /* width: 16%; */
+  text-align: right;
+}
+
+form button {
+  width: 15rem;
+  height: 4rem;
+  border-radius: 2rem;
+}
+button:hover {
+  background-color: green;
+}
+
+.btnAlignment {
+  display: flex;
+  justify-content: center;
+}
+.closeIcon {
+  position: absolute;
+  right: 1rem;
+}
+
+.subMenuDiv {
+  border-top: 1px solid black;
+  background-color: bisque;
+  width: 100rem;
+  z-index: 1;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5rem;
+  flex: 1 0;
+  font-size: 1.6rem;
+}
+
+.MarginBottom {
+  margin-bottom: 1px solid black;
+}
+
+form th {
+  text-align: center;
+}
+
+.NoBorder {
+  border: none;
+}
+.Border {
+  border: 1px solid black;
+}
+
+.TableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
+.TableContainer td,
+.TableContainer th {
+  width: auto;
+  min-width: 150px;
+  /* border: 1px solid brown; */
+}
+
+.DisplayImage {
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid black;
+}
